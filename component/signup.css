@@ -1,0 +1,126 @@
+/* signup.css */
+
+/* Background container for the entire signup page */
+.signup-container {
+    background-image: url('https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2020/04/31185614/12-Benefits-of-Student-Database-Management-System.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px; /* Add padding to prevent the form from sticking to the edges */
+}
+
+/* Box container for the signup form */
+.signup-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better blending with the background */
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    width: 100%;
+    max-width: 420px; /* Slightly larger max width */
+}
+
+/* Title styling */
+.signup-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color for contrast */
+    text-align: center;
+}
+
+/* General button styling */
+.signup-button, .social-button {
+    margin-top: 20px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Primary signup button */
+.signup-button {
+    background-color: #28a745; /* Green color for primary action */
+    color: #ffffff;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.signup-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Social button styling */
+.social-button {
+    font-size: 14px; /* Slightly smaller text for social buttons */
+}
+
+/* Facebook button */
+.social-button.facebook {
+    background-color: #3b5998;
+    color: #ffffff;
+}
+
+.social-button.facebook:hover {
+    background-color: #2d4373;
+}
+
+/* Google button */
+.social-button.google {
+    background-color: #db4437;
+    color: #ffffff;
+}
+
+.social-button.google:hover {
+    background-color: #c13527;
+}
+
+/* Error message styling */
+.error {
+    color: #d32f2f; /* Red color for errors */
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px; /* Space above the error message */
+}
+
+/* Input field styling */
+.MuiTextField-root {
+    margin-top: 12px;
+    background-color: #f9f9f9; /* Light background for input fields */
+    border-radius: 5px;
+}
+
+/* Link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Center text on small screens */
+@media (max-width: 600px) {
+    .signup-box {
+        padding: 20px;
+        margin: 0 10px; /* Ensure there's space around the form on mobile */
+    }
+
+    .signup-title {
+        font-size: 22px;
+    }
+
+    .signup-button {
+        font-size: 14px;
+    }
+
+    .social-button {
+        font-size: 12px;
+    }
+}
